@@ -65,55 +65,35 @@
         <div style="height: 400px; padding: 5px;">
             <div id="radio" class="container-radio">
                 <input class="option-input radio" type="radio" name="type" id="FCFS" onclick="radioClicked(this.id)">
-                <label for="FCFS">&nbsp;FCFS</label>
+                <label for="FCFS">&nbsp;FCFS (First Come First Serve) </label>
                 <br>
                 <input class="option-input radio" type="radio" name="type" id="SJF" onclick="radioClicked(this.id)">
-                <label for="SJF">&nbsp;SJF</label>
-                <br>
-                <input class="option-input radio" type="radio" name="type" id="RR" onclick="radioClicked(this.id)">
-                <label for="RR">&nbsp;ROUND ROBIN</label>
-                <br>
-                <input class="option-input radio" type="radio" name="type" id="LJF" onclick="radioClicked(this.id)">
-                <label for="LJF">&nbsp;LJF</label>
-                <br>
-                <input class="option-input radio" type="radio" name="type" id="PR" onclick="radioClicked(this.id)">
-                <label for="Priority">&nbsp;PRIORITY</label>
-                <br>
-                <input class="option-input radio" type="radio" name="type" id="LRTF" onclick="radioClicked(this.id)">
-                <label for="LRTF">&nbsp;LRTF</label>
+                <label for="SJF">&nbsp;SJF (Shortest Job First)</label>
                 <br>
                 <input class="option-input radio" type="radio" name="type" id="SRTF" onclick="radioClicked(this.id)">
-                <label for="SRTF">&nbsp;SRTF</label>
+                <label for="SRTF">&nbsp;SRTF (Shortest Remaining Time First)</label>
                 <br>
+                <input class="option-input radio" type="radio" name="type" id="PR" onclick="radioClicked(this.id)">
+                <label for="Priority">&nbsp;Priority CPU Scheduling</label>
+                <br>
+                <input class="option-input radio" type="radio" name="type" id="RR" onclick="radioClicked(this.id)">
+                <label for="RR">&nbsp;RR (Round Robin)</label>
+                <br>
+                <input class="option-input radio" type="radio" name="type" id="LJF" onclick="radioClicked(this.id)">
+                <label for="LJF">&nbsp;LJF(Longest Job First)</label>
+                <br>
+                <input class="option-input radio" type="radio" name="type" id="LRTF" onclick="radioClicked(this.id)">
+                <label for="LRTF">&nbsp;LRTF (Longest Remaining Time First)</label>
+                <br>
+              
                 <br>
             </div>
         </div>
-
-        <!-- <div>
-            <strong>Enter Arrival Time:</strong>
-            <span><input type="number" min="0" id="AT" placeholder="Enter Arrival Time" style="height: 30px; font-family: cursive;
-                        background-color: white; color: black; border: 2px solid
-                        black;"></span>
-            <br><br>
-            <br>
-            <strong>Enter Burst Time: &nbsp</strong>
-            <span><input type="number" min="0" id="BT" placeholder="Enter Burst Time" style="height: 30px; font-family: cursive;
-                        background-color: white; color: black; border: 2px solid
-                        black;"></span>
-            <br><br>
-            <br>
-            <span id="timequanta" style="left: 0; display: none;">
-                <strong id="timetext">Enter Time Quanta: &nbsp</strong>
-                <span><input type="number" min="0" id="TQ" placeholder="Enter Time Quanta" style="height: 30px;
-                            font-family: cursive; background-color: white;
-                            color: black; border: 2px solid black;"></span>
-            </span>
-        </div> -->
         <div class="MainPage">
             <div class="InputFolder">
                 
                 
-                    <strong>Enter Arrival Time :</strong>
+                    <!-- <strong>Enter Arrival Time :</strong>
                     <span>
                         <input type="number" min="0" id="AT" placeholder="Enter Arrival Time" style="height: 30px; 
                         background-color: white; color: black; border: 2px solid
@@ -128,8 +108,28 @@
                         black;margin-left: 450px;" class="InputFiled">
                     </span>
                 
-                <br><br>
+                <br><br> -->
 
+                <span id="timearrival" style="left: 0;">
+                    <strong style="margin-left: 10px">Enter Arrival Time: &nbsp</strong>
+                    <span>
+                        <input type="number" min="0" id="AT" placeholder="Enter Arrival Time" style="height: 30px;
+                             background-color: white;
+                            color: black; border: 2px solid black;" class="InputFiled">
+                    </span>
+                </span>
+                <br>
+                <br>
+                <span id="timeburst" style="left: 0;">
+                    <strong style="margin-left: 10px">Enter Burst Time: &nbsp</strong>
+                    <span>
+                        <input type="number" min="0" id="BT" placeholder="Enter Burst Time" style="height: 30px;
+                             background-color: white;
+                            color: black; border: 2px solid black;" class="InputFiled">
+                    </span>
+                </span>
+                <br>
+                <br>
                 <span id="timequanta" style="left: 0; display: none;">
                     <strong id="timetext" style="margin-left: 10px">Enter Time Quanta: &nbsp</strong>
                     <span>
@@ -153,15 +153,6 @@
         </thead>
         <tbody>
             <tr>
-                <!-- <td id="PI" style="width:12%;">Process ID</td>
-                <td style="width: 12%;">ArrivalTime</td>
-                <td style="width: 12%;">Burst Time</td>
-                <td id="pcol" style="width: 10%;">Priority</td>
-                <td id="RS" style="width: 16%;">Response Time`</td>
-                <td style="width: 10%;">TAT</td>
-                <td style="width: 10%;">CT</td>
-                <td style="width: 12%;">Waiting Time</td>
-                <td id="color-code" style="width:6%;">Color</td> -->
                 <td id="PI" style="width:12%; color:blue ">Process ID</td>
                 <td style="width: 12%; color:green">ArrivalTime</td>
                 <td style="width: 12%; color:red">Burst Time</td>

@@ -5,7 +5,7 @@ let table=document.getElementById("table");
 
 function radioClicked(e){
     if(e=="RR"){
-        document.getElementById("timetext").innerHTML='Enter Time Quanta';
+        document.getElementById("timetext").innerHTML='Enter Time Quanta:';
         document.getElementById("TQ").placeholder='Enter Time Quanta';
         document.getElementById("timequanta").style.display='block';
         var pl=document.getElementsByClassName("priority-input");
