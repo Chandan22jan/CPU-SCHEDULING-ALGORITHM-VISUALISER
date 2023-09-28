@@ -120,6 +120,12 @@ table{
 #timequanta{
     margin-left: 35%;
 }
+#timebust{
+    margin-left: 35%;
+}
+#timearrival{
+    margin-left: 35%;
+}
 
 #myChart{
     border-radius: 10px;
