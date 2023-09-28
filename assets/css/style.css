@@ -138,7 +138,6 @@ table{
 .end{
     font-weight: 200px;
     font-size: 25px;
-
     /* color: red; */
 }
 
@@ -158,14 +157,13 @@ table{
     border: 1px solid black;
     
 } */
-.my-heading .text-center{
+.text-center{
     /* display: inline-flex; */
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    justify-items: center;
+    /* justify-items: center; */
     /* margin-left: 26rem; */
     background-color: lightgreen;
+    padding: 8pxpx;
+    border-bottom: 4px red solid;
 }
-
-
-

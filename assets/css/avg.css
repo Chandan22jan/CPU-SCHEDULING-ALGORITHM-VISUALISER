@@ -5,10 +5,12 @@
 .avg-text{
     font-size: large;
     font-weight: 400;
+    
 }
 
 .ans-avg{
     border: 1px solid black;
     width: 52px;
     font-weight: bolder;
+    
 }
